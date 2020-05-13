@@ -1,0 +1,97 @@
+* body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+#main-doc {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+    "s i i i"
+    "s w w w"
+    "s j j j"
+    "s h h h"
+    "s v v v"
+    "s d d d"
+    "s r r r";
+}
+
+#navbar {
+  grid-area: s;
+  width: 350px;
+  font-size: 20px;
+}
+#navbar header {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  height: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  margin-top: 30px;
+}
+
+#Introduction {
+  grid-area: i;
+}
+#What_you_should_already_know {
+  grid-area: w;
+}
+#JavaScript_and_Java {
+  grid-area: j;
+}
+#Hello_world {
+  grid-area: h;
+}
+#Variables {
+  grid-area: v;
+}
+#Declaring_variables {
+  grid-area: d;
+}
+#Reference {
+  grid-area: r;
+}
+.main-section {
+  margin: 0px 20px 30px 20px;
+}
+
+header {
+  font-size: 30px;
+}
+
+.nav-link {
+  padding: 0px 0px 50px 30px;
+  height: 10%;
+}
+
+code {
+  background-color: ivory;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  #main-doc {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+      "s s s s"
+      "i i i i"
+      "w w w w"
+      "j j j j"
+      "h h h h"
+      "v v v v"
+      "d d d d"
+      "r r r r";
+  }
+  #navbar {
+    grid-area: s;
+    width: 350px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 0px 0px 50px 50px;
+  }
+}
