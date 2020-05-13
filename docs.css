@@ -20,6 +20,7 @@
   grid-area: s;
   width: 350px;
   font-size: 20px;
+  border-right: solid;
 }
 #navbar header {
   margin-top: 20px;
